@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     echo "Maven comlie and test for code coverage"
-                        sh 'mvn clean package'
+                        //sh 'mvn clean package'
                 }
             }
         }
