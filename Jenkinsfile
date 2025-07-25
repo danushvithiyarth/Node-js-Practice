@@ -26,6 +26,8 @@ pipeline {
                 }
             }
         }
+    }
+}
 /*
         stage('DockerHub image push') {
             steps {
