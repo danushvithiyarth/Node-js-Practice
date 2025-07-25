@@ -24,7 +24,8 @@ pipeline {
                     echo "docker build"
                         sh 'docker image prune -f'
                         sh 'docker build -t danushvithiyarth/java-app:latest .'
-                }
+                        sh 'docker run -d -p 80:80 danushvithiyarth/java-app:latest'
+                 }
             }
         }
         stage('Debug Docker') {
