@@ -27,6 +27,14 @@ pipeline {
                 }
             }
         }
+        stage('Debug Docker') {
+         steps {
+          sh 'docker info'
+          sh 'docker images | grep java-app'
+  }
+}
+
+
     }
 }
 /*
