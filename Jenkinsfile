@@ -4,10 +4,11 @@ pipeline {
     tools {
       maven 'maven'
     }
-    
+    /*
     environment{
         SCANNER_HOME = tool 'sonar-scanner'
     }
+    */
     stages {
         stage('Maven') {
             steps {
